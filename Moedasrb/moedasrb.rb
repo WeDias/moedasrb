@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# moedasrb.rb       
+# moedasrb.rb
 # Github:@WeDias
 
 # MIT License
@@ -24,7 +24,6 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-
 
 # Fonte: https://dolarhoje.com/
 
@@ -72,6 +71,8 @@ class Moedas
   end
 end
 
-dolar = Moedas.new('dolar')
-euro = Moedas.new('euro')
-puts "Dolar #{dolar.precof}\nEuro #{euro.precof}"
+if __FILE__ == $PROGRAM_NAME
+  dolar = Moedas.new('dolar')
+  euro = Moedas.new('euro')
+  puts "Dolar #{dolar.precof}\nEuro #{euro.precof}"
+end
